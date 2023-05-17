@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="Products.html"><img src="patronstore.png" width="125px"
+                        style="padding-top: 30px;padding-left:5px;"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="Products.html">Products</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!--account---->
+
+    <h2 class="titlee">Patrons Account</h2>
+
+    <div class="account-page" style="background-image:url('b89.jpg');background-size: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="Loginform"
+                            action="connection.php" method="post">
+                            <input type="text" placeholder=Username name="Username">
+                            <input type="password" placeholder="password" name="password">
+                            <button type="submit" class=btn>Login</button>
+                            <span onclick="register()">New here?</span>
+                        </form>
+
+                        <form id="Regform">
+                            <input type="text" placeholder="First Name" name="First Name">
+                            <input type="text" placeholder="Last Name" name="Last  Name">
+                            <input type="email" placeholder=Email name="Email">
+                            <input type="password" placeholder=Password name="Password">
+                            <button type="button" class=btn onclick="conf()">Register</button>
+                            <span onclick="login()">already have an account?</span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--------footer--------->
+    <div class="footer" style="background-color:black;height: 300px;">
+        <img src="patronstore.png" width="250px" style="padding-top: 40px;padding-left: 50px;">
+        <ul
+            style="color:white;margin-left:100px;padding-top: 50px;float: right;padding-right: 50px;font-size: 18px;list-style: none;">
+            <li style="color:white;padding-bottom: 20px;">Connect with Us</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Pinterest</li>
+            <li>Twitter</li>
+            <li>Linkdin</li>
+        </ul>
+
+        <ul
+            style="color:white;margin-left:100px;padding-top: 50px;float: right;padding-right: 50px;font-size: 18px;list-style: none;">
+            <li style="color:white;padding-bottom: 20px">Get to Know Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Press Releases</li>
+            <li>Patron Cares</li>
+            <li>Gift a Smile</li>
+        </ul>
+
+        <ul
+            style="color:white;margin-left:100px;padding-top: 50px;float: right;padding-right: 50px;font-size: 18px;list-style: none;">
+            <li style="color:white;padding-bottom: 20px">Make Money with Us</li>
+            <li>Sell on Patrons</li>
+            <li>Advertise your Products</li>
+            <li>Become an Affilliate</li>
+            <li>Patrons Global Selling</li>
+            <li>Membership</li>
+        </ul>
+        <ul
+            style="color:white;margin-left:100px;padding-top: 50px;float: right;padding-right: 50px;font-size: 18px;list-style: none;">
+            <li style="color:white;padding-bottom: 20px">Let Us Help You</li>
+            <li>Your Account</li>
+            <li>Returns Centre</li>
+            <li>Patrons App Download</li>
+            <li>Patrons Assistant</li>
+            <li>Help</li>
+        </ul>
+    </div>
+
+    <!-----js------>
+    <script>
+        var Loginform = document.getElementById("Loginform")
+        var Regform = document.getElementById("Regform")
+        var Indicator = document.getElementById("Indicator")
+
+        function login() {
+            Regform.style.transform = "translateX(800px)";
+            Loginform.style.transform = "translateX(20px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+        function register() {
+            Regform.style.transform = "translateX(10px)";
+            Loginform.style.transform = "translateX(500px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    padding:0px 20px;
+
+}
+.logo{
+    margin-left: 0px;
+    float: left;
+}
+.containe{
+    max-width: 1300px;
+    margin-top: 30px;
+   
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+  
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    font-size: large;
+}
+nav ul li{
+    display: inline-block;
+    margin-right:20px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+   }
+#MenuItems{
+    display: flex;
+    padding-left: 950px;
+
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+@
+#MenuItems li{
+    
+    list-style: none;
+    font-size: large;
+    padding: 10px;
+}
+.page-btn{
+    margin-left: 50px;
+}
+.page-btn span{
+    display: inline-block;
+    background-color: orangered;
+    color: white;
+    border:1px solid white;
+    border-radius: 50px;
+    font-size: large;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    margin-right:5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    
+  
+  }
+  .page-btn span:hover{
+      background: gray;
+   
+      color:white;
+  }
+  
+.flex{
+    display:flex;
+    margin: 10px;
+}
+
+.image img{
+    width: 100%;
+
+}
+.titlee{
+    text-align: center;
+    margin:0 auto 40px;
+    margin-bottom: 150px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.titlee::after{
+    content:'';
+    background: #ff523b;
+    width: 380px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+a:after
+{
+    content:"";
+    position: absolute;
+    background-color: orangered;
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition:0.3s;
+}
+a:hover:after
+{
+    width:100%;
+}
+.des{
+    width: 100%;
+
+}
+.cards{
+   
+    border: 2px solid black;
+    width: 250px;
+    margin-left: 70px;
+   
+    margin-bottom: 60px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+button{
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    background-color: lightslategrey;
+    margin-top: 30px;
+    color: white;
+}
+
+.cards:hover{
+    transform: translateY(5px);
+    text-decoration: underline;    
+    
+    
+}
+li:hover{
+    color:orangered;
+    cursor: pointer;
+    transform: translateX(5px)
+}
+.title{
+    padding: 15px;
+}
+p{
+    font-size: 25px;
+}

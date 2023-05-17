@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+.titlee{
+    
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    position: relative;
+    line-height: 60px;
+    color:#555;
+    font-size: 30px;
+}
+.titlee::after{
+    content:'';
+    background: #ff523b;
+    width: 250px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+a:after
+{
+    content:"";
+    position: absolute;
+    background-color: orangered;
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition:0.3s;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    padding:0px 20px;
+
+}
+a:hover:after
+{
+    width:100%;
+}
+p
+{
+color:#fff;
+}
+.container
+{
+margin:auto;
+padding-left: 25px;
+padding-right:25px;
+}
+span p{
+    padding-top: 30px;
+    width: 200px;
+    font-size: 20px;
+}
+.form-btn span p{
+    margin-left: 1000px;
+}
+.account-page
+{   margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    padding: 80px 0;
+    border:50px solid white;
+    
+    border-radius: 20px;
+   
+}
+.form-container
+{   margin-left: 900px;
+    background:grey;
+    border: 20px solid black;
+    border-radius: 30px;
+    width: 500px;
+    height: 550px;
+    position: relative;
+    text-align: center;
+    padding: 30px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+   overflow: hidden;
+}
+.form-container span
+{   width: 30px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0, 10px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn
+{
+    display: inline-block;
+    
+}
+.form-container form
+{
+ max-width: 1800px;
+ padding: 0 0;
+ position: absolute;
+
+ 
+ transition: transform 1s;
+}
+form input
+{
+    width: 80%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+form .btn 
+{   border: 2px solid black;
+    padding: 10px;
+    width: 30%;
+   margin-right: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    color: brown;
+}
+button.btn{
+    border: 2px solid white;
+    font-size: 20px;
+    color: white;
+    background-color: orangered;
+    border-radius: 20px;
+    margin-bottom: 200px;
+}
+form .btn:focus
+{
+    outline: none;
+}
+#Loginform
+{
+    left: -10px;
+    padding-top: 100px;
+}
+#Regform
+{
+    left:0;
+    padding-top: 50px;
+}
+
+li:hover{
+    color:orangered;
+    cursor: pointer;
+    transform: translateX(5px)
+}
+
+#Indicator
+{
+    width: 100px;
+    border:none;
+    background:#e74935;
+    height:3px;
+    margin-top:8px;
+    transform: translateX(300);
+    transition: transform 1s;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.logo{
+    margin-left: 0px;
+    float: left;
+}
+  
+a{
+    text-decoration: none;
+    color:#555;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    font-size: large;
+}
+nav ul li{
+    display: inline-block;
+    margin-right:20px;
+}
+.container{
+   
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+   }
+#MenuItems{
+    display: flex;
+    padding-left: 900px;
+    font-size: 20px;
+
+}
